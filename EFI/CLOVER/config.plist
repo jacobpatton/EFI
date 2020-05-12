@@ -888,6 +888,8 @@
 		<false/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
+		<key>FakeCPUID</key>
+		<string>0x0306A0</string>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelLapic</key>
