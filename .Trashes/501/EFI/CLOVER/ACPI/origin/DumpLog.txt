@@ -1,0 +1,132 @@
+20:783  4:708  Found BIOS RSDP at F05B0
+20:783  0:000  Printing ACPI tables from RSDP F05B0 ...
+20:783  0:000   F05B0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+20:783  0:000    (Rsdt: BEE0B028)
+20:783  0:000    BEE0B028: 'RSDT', 'A M I', Rev: 1, Len: 112
+20:783  0:000    Tables in Rsdt: 19
+20:783  0:000    0. BEE0B168: 'FACP', 'A M I', Rev: 2, Len: 132
+20:783  0:000        (Dsdt: BEE0B1F0, Facs: BF1B9C00)
+20:783  0:000        BEE0B1F0: 'DSDT', 'A M I', Rev: 2, Len: 164023
+20:785  0:002        BF1B9C00: 'FACS', Ver: 0, Len: 64
+20:785  0:000    1. BEE333C0: 'APIC', 'A M I', Rev: 3, Len: 132
+20:785  0:000    2. BEE33448: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:785  0:000    3. BEE33490: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:785  0:000    4. BEE334D0: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:785  0:000    5. BEE33570: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:785  0:000    6. BEE366C8: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:785  0:000    7. BEE38C10: 'HPET', 'SKL', Rev: 1, Len: 56
+20:785  0:000    8. BEE38C48: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:785  0:000    9. BEE39A88: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:785  0:000    10. BEE3C560: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:785  0:000    11. BEE3C5A8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:785  0:000    12. BEE3D488: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:785  0:000    13. BEE3D520: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:785  0:000    14. BEE3D548: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:785  0:000    15. BEE3D7E8: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:785  0:000    16. BEE407F0: 'DBGP', '', Rev: 1, Len: 52
+20:785  0:000    17. BEE40828: 'DBG2', '', Rev: 0, Len: 84
+20:785  0:000    18. BEE40880: 'BGRT', 'A M I', Rev: 1, Len: 56
+20:785  0:000  Found UEFI Acpi 2.0 RSDP at BEE0B000
+20:785  0:000  Saving ACPI tables from RSDP BEE0B000 to EFI\CLOVER\ACPI\origin ...
+20:785  0:000   BEE0B000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+20:785  0:000    (Xsdt: BEE0B0A0, Rsdt: BEE0B028)
+20:785  0:000    BEE0B0A0: 'XSDT', 'A M I', Rev: 1, Len: 188
+20:785  0:000    BEE0B028: 'RSDT', 'A M I', Rev: 1, Len: 112
+20:785  0:000    Tables in Xsdt: 19
+20:785  0:000    0. BEE332A8: 'FACP', 'A M I', Rev: 6, Len: 276
+20:785  0:000        (Dsdt: BEE0B1F0, Facs: BF1B9C40, XDsdt: BEE0B1F0, XFacs: 0)
+20:785  0:000        BEE0B1F0: 'DSDT', 'A M I', Rev: 2, Len: 164023
+20:787  0:002        BF1B9C40: 'FACS', Ver: 2, Len: 64
+20:787  0:000    1. BEE333C0: 'APIC', 'A M I', Rev: 3, Len: 132
+20:787  0:000    2. BEE33448: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:787  0:000    3. BEE33490: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:787  0:000    4. BEE334D0: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:787  0:000    5. BEE33570: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:787  0:000    6. BEE366C8: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:787  0:000    7. BEE38C10: 'HPET', 'SKL', Rev: 1, Len: 56
+20:787  0:000    8. BEE38C48: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:787  0:000    9. BEE39A88: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:787  0:000    10. BEE3C560: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:787  0:000    11. BEE3C5A8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:787  0:000    12. BEE3D488: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:787  0:000    13. BEE3D520: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:787  0:000    14. BEE3D548: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:787  0:000    15. BEE3D7E8: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:787  0:000    16. BEE407F0: 'DBGP', '', Rev: 1, Len: 52
+20:787  0:000    17. BEE40828: 'DBG2', '', Rev: 0, Len: 84
+20:787  0:000    18. BEE40880: 'BGRT', 'A M I', Rev: 1, Len: 56
+20:787  0:000    Tables in Rsdt: 19
+20:787  0:000    0. BEE0B168: 'FACP', 'A M I', Rev: 2, Len: 132
+20:787  0:000        (Dsdt: BEE0B1F0, Facs: BF1B9C00)
+20:787  0:000        BEE0B1F0: 'DSDT', 'A M I', Rev: 2, Len: 164023
+20:789  0:002        BF1B9C00: 'FACS', Ver: 0, Len: 64
+20:789  0:000    1. BEE333C0: 'APIC', 'A M I', Rev: 3, Len: 132
+20:789  0:000    2. BEE33448: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:789  0:000    3. BEE33490: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:789  0:000    4. BEE334D0: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:789  0:000    5. BEE33570: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:789  0:000    6. BEE366C8: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:789  0:000    7. BEE38C10: 'HPET', 'SKL', Rev: 1, Len: 56
+20:789  0:000    8. BEE38C48: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:789  0:000    9. BEE39A88: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:789  0:000    10. BEE3C560: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:789  0:000    11. BEE3C5A8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:789  0:000    12. BEE3D488: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:789  0:000    13. BEE3D520: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:789  0:000    14. BEE3D548: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:789  0:000    15. BEE3D7E8: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:789  0:000    16. BEE407F0: 'DBGP', '', Rev: 1, Len: 52
+20:789  0:000    17. BEE40828: 'DBG2', '', Rev: 0, Len: 84
+20:789  0:000    18. BEE40880: 'BGRT', 'A M I', Rev: 1, Len: 56
+20:789  0:000  Found UEFI Acpi 1.0 RSDP at BEE0B000
+20:789  0:000  Printing ACPI tables from RSDP BEE0B000 ...
+20:789  0:000   BEE0B000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+20:789  0:000    (Xsdt: BEE0B0A0, Rsdt: BEE0B028)
+20:789  0:000    BEE0B0A0: 'XSDT', 'A M I', Rev: 1, Len: 188
+20:789  0:000    BEE0B028: 'RSDT', 'A M I', Rev: 1, Len: 112
+20:789  0:000    Tables in Xsdt: 19
+20:789  0:000    0. BEE332A8: 'FACP', 'A M I', Rev: 6, Len: 276
+20:789  0:000        (Dsdt: BEE0B1F0, Facs: BF1B9C40, XDsdt: BEE0B1F0, XFacs: 0)
+20:789  0:000        BEE0B1F0: 'DSDT', 'A M I', Rev: 2, Len: 164023
+20:791  0:002        BF1B9C40: 'FACS', Ver: 2, Len: 64
+20:791  0:000    1. BEE333C0: 'APIC', 'A M I', Rev: 3, Len: 132
+20:791  0:000    2. BEE33448: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:791  0:000    3. BEE33490: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:791  0:000    4. BEE334D0: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:791  0:000    5. BEE33570: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:791  0:000    6. BEE366C8: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:791  0:000    7. BEE38C10: 'HPET', 'SKL', Rev: 1, Len: 56
+20:791  0:000    8. BEE38C48: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:791  0:000    9. BEE39A88: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:791  0:000    10. BEE3C560: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:791  0:000    11. BEE3C5A8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:791  0:000    12. BEE3D488: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:791  0:000    13. BEE3D520: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:791  0:000    14. BEE3D548: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:791  0:000    15. BEE3D7E8: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:791  0:000    16. BEE407F0: 'DBGP', '', Rev: 1, Len: 52
+20:791  0:000    17. BEE40828: 'DBG2', '', Rev: 0, Len: 84
+20:791  0:000    18. BEE40880: 'BGRT', 'A M I', Rev: 1, Len: 56
+20:791  0:000    Tables in Rsdt: 19
+20:791  0:000    0. BEE0B168: 'FACP', 'A M I', Rev: 2, Len: 132
+20:791  0:000        (Dsdt: BEE0B1F0, Facs: BF1B9C00)
+20:791  0:000        BEE0B1F0: 'DSDT', 'A M I', Rev: 2, Len: 164023
+20:793  0:002        BF1B9C00: 'FACS', Ver: 0, Len: 64
+20:793  0:000    1. BEE333C0: 'APIC', 'A M I', Rev: 3, Len: 132
+20:793  0:000    2. BEE33448: 'FPDT', 'A M I', Rev: 1, Len: 68
+20:793  0:000    3. BEE33490: 'MCFG', 'A M I', Rev: 1, Len: 60
+20:793  0:000    4. BEE334D0: 'FIDT', 'A M I', Rev: 1, Len: 156
+20:793  0:000    5. BEE33570: 'SSDT', 'SaSsdt', Rev: 2, Len: 12628
+20:793  0:000    6. BEE366C8: 'SSDT', 'PegSsdt', Rev: 2, Len: 9540
+20:793  0:000    7. BEE38C10: 'HPET', 'SKL', Rev: 1, Len: 56
+20:793  0:000    8. BEE38C48: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3643
+20:793  0:000    9. BEE39A88: 'SSDT', 'xh_rvp10', Rev: 2, Len: 10967
+20:793  0:000    10. BEE3C560: 'UEFI', 'EDK2', Rev: 1, Len: 66
+20:793  0:000    11. BEE3C5A8: 'SSDT', 'CpuSsdt', Rev: 2, Len: 3806
+20:793  0:000    12. BEE3D488: 'LPIT', 'SKL', Rev: 1, Len: 148
+20:793  0:000    13. BEE3D520: 'WSMT', 'SKL', Rev: 1, Len: 40
+20:793  0:000    14. BEE3D548: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+20:793  0:000    15. BEE3D7E8: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+20:793  0:000    16. BEE407F0: 'DBGP', '', Rev: 1, Len: 52
+20:793  0:000    17. BEE40828: 'DBG2', '', Rev: 0, Len: 84
+20:793  0:000    18. BEE40880: 'BGRT', 'A M I', Rev: 1, Len: 56
