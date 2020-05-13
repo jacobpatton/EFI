@@ -247,7 +247,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>keepsyms=1 dart=0 debug=0x100 -v</string>
+		<string>keepsyms=1 dart=0 debug=0x100 -v -x</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -981,12 +981,14 @@
 		<key>Memory</key>
 		<dict>
 			<key>Channels</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>Modules</key>
 			<array>
 				<dict>
 					<key>Frequency</key>
 					<integer>2133</integer>
+					<key>Part</key>
+					<string>CT2K16G4DFD8213</string>
 					<key>Serial</key>
 					<string>Unknown.0</string>
 					<key>Size</key>
@@ -1001,6 +1003,8 @@
 				<dict>
 					<key>Frequency</key>
 					<integer>2133</integer>
+					<key>Part</key>
+					<string>CT2K16G4DFD8213</string>
 					<key>Serial</key>
 					<string>Unknown.1</string>
 					<key>Size</key>
