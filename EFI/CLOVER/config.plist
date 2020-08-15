@@ -247,7 +247,7 @@
 		<key>#XMPDetection</key>
 		<string>-1</string>
 		<key>Arguments</key>
-		<string>keepsyms=1 dart=0 debug=0x100 brcmfx-driver=1</string>
+		<string>keepsyms=1 dart=0 debug=0x100 brcmfx-driver=1 -liludbg igfxonln=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -1007,7 +1007,7 @@
 		<key>Mobile</key>
 		<false/>
 		<key>ProductName</key>
-		<string>iMac17,1</string>
+		<string>  iMac17,1</string>
 		<key>SerialNumber</key>
 		<string>C02RH09CGG7L</string>
 		<key>SmUUID</key>
