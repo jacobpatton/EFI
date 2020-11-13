@@ -10,7 +10,7 @@
 		<dict>
 			<key>#EnableC4</key>
 			<false/>
-			<key>#UseSystemIO</key>
+			<key>#EnableC7</key>
 			<false/>
 			<key>#PluginType</key>
 			<integer>0</integer>
@@ -22,21 +22,21 @@
 			<integer>12</integer>
 			<key>#DropOem</key>
 			<true/>
-			<key>#UnderVoltStep</key>
-			<integer>1</integer>
-			<key>#MinMultiplier</key>
-			<integer>8</integer>
 			<key>#EnableC6</key>
 			<true/>
+			<key>#MinMultiplier</key>
+			<integer>8</integer>
 			<key>#C3Latency</key>
 			<string>0x03E7</string>
+			<key>#UnderVoltStep</key>
+			<integer>1</integer>
 			<key>#PLimitDict</key>
 			<integer>1</integer>
+			<key>#UseSystemIO</key>
+			<false/>
 			<key>#NoOemTableId</key>
 			<false/>
 			<key>#NoDynamicExtract</key>
-			<false/>
-			<key>#EnableC7</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
@@ -123,12 +123,12 @@
 			<dict>
 				<key>USB</key>
 				<true/>
-				<key>HDMI</key>
-				<true/>
-				<key>ATI</key>
-				<true/>
 				<key>SmBUS</key>
 				<false/>
+				<key>ATI</key>
+				<true/>
+				<key>HDMI</key>
+				<true/>
 				<key>LAN</key>
 				<true/>
 				<key>IntelGFX</key>
@@ -323,10 +323,10 @@
 					<string>M</string>
 					<key>Volume</key>
 					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
-					<key>Disabled</key>
-					<true/>
 					<key>Arguments</key>
 					<string>Kernel=mach_kernel</string>
+					<key>Disabled</key>
+					<true/>
 					<key>AddArguments</key>
 					<string>-v</string>
 					<key>Path</key>
@@ -341,10 +341,10 @@
 					<string>OSXRecovery</string>
 				</dict>
 				<dict>
-					<key>Volume</key>
-					<string>454794AC-760D-46E8-8F77-D6EB23D2FD32</string>
 					<key>Hidden</key>
 					<false/>
+					<key>Volume</key>
+					<string>454794AC-760D-46E8-8F77-D6EB23D2FD32</string>
 					<key>Type</key>
 					<string>OSX</string>
 					<key>SubEntries</key>
@@ -367,8 +367,8 @@
 			<key>Legacy</key>
 			<array>
 				<dict>
-					<key>Volume</key>
-					<string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
+					<key>Title</key>
+					<string>MyLegacyEntry</string>
 					<key>Type</key>
 					<string>Windows</string>
 					<key>Hidden</key>
@@ -377,23 +377,23 @@
 					<string>L</string>
 					<key>Disabled</key>
 					<true/>
-					<key>Title</key>
-					<string>MyLegacyEntry</string>
+					<key>Volume</key>
+					<string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
 				</dict>
 			</array>
 			<key>Tool</key>
 			<array>
 				<dict>
-					<key>Volume</key>
-					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
 					<key>Hidden</key>
 					<false/>
 					<key>Hotkey</key>
 					<string>S</string>
-					<key>Disabled</key>
-					<false/>
+					<key>Volume</key>
+					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
 					<key>Arguments</key>
 					<string>-b</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Path</key>
 					<string>\EFI\CLOVER\TOOLS\Shell64-v1.efi</string>
 					<key>Title</key>
@@ -419,13 +419,13 @@
 	<dict>
 		<key>#BusSpeedkHz</key>
 		<integer>133330</integer>
-		<key>#TurboDisable</key>
+		<key>#HWPEnable</key>
 		<true/>
 		<key>#TDP</key>
 		<integer>95</integer>
 		<key>#SavingMode</key>
 		<integer>7</integer>
-		<key>#HWPEnable</key>
+		<key>#TurboDisable</key>
 		<true/>
 		<key>#HWPValue</key>
 		<string>0x30002a01</string>
@@ -479,12 +479,17 @@
 				<key>AAPL,current-available</key>
 				<data>sAQ=</data>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
+			<dict>
+				<key>built-in</key>
+				<data>AQ==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1a,0x0)</key>
 			<dict>
-				<key>AAPL,current-available</key>
-				<data>sAQ=</data>
 				<key>AAPL,current-in-sleep</key>
 				<data>6AM=</data>
+				<key>AAPL,current-available</key>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
 				<data>vAI=</data>
 				<key>AAPL,clock-id</key>
@@ -493,11 +498,6 @@
 				<data>AA==</data>
 				<key>device_type</key>
 				<string>EHCI</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
-			<dict>
-				<key>built-in</key>
-				<data>AQ==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</key>
 			<dict>
@@ -539,10 +539,10 @@
 				<data>AwBmAQ==</data>
 				<key>graphic-options</key>
 				<data>DAAAAA==</data>
-				<key>AAPL,HasLid</key>
-				<data>AQAAAA==</data>
 				<key>model</key>
 				<string>Intel HD Graphics 4000</string>
+				<key>AAPL,HasLid</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>SecondaryGPU</key>
 			<dict>
@@ -551,10 +551,10 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
-				<key>AAPL,current-available</key>
-				<data>sAQ=</data>
 				<key>AAPL,current-in-sleep</key>
 				<data>6AM=</data>
+				<key>AAPL,current-available</key>
+				<data>sAQ=</data>
 				<key>AAPL,current-extra</key>
 				<data>vAI=</data>
 				<key>AAPL,clock-id</key>
@@ -576,40 +576,40 @@
 		<key>#AddProperties</key>
 		<array>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AQAAAA==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-patch-enable</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 			</dict>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AAAwAQ==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-stolenmem</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 			</dict>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AACQAA==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-fbmem</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 			</dict>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AAAAgA==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-unifiedmem</string>
 				<key>Device</key>
@@ -738,10 +738,10 @@
 			<string>0xA1</string>
 			<key>#VendorID</key>
 			<string>0x1006</string>
-			<key>#Custom</key>
-			<data>AP///////wAGECGSAAAAAAASAQOAIRV4CunVmVlTjigmUFQAAAABAQEBAQEBAQEBAQEBAQEB3iGgcFCEHzAgIFYAS88QAAAY3iGgcFCEHzAgIFYAS88QAAAAAAAA/gBXNjU3RwAxNTRXUDEKAAAA/gAjMz1IZYSq/wIBCiAgAJo=</data>
 			<key>#Inject</key>
 			<true/>
+			<key>#Custom</key>
+			<data>AP///////wAGECGSAAAAAAASAQOAIRV4CunVmVlTjigmUFQAAAABAQEBAQEBAQEBAQEBAQEB3iGgcFCEHzAgIFYAS88QAAAY3iGgcFCEHzAgIFYAS88QAAAAAAAA/gBXNjU3RwAxNTRXUDEKAAAA/gAjMz1IZYSq/wIBCiAgAJo=</data>
 		</dict>
 		<key>#LoadVBios</key>
 		<false/>
@@ -776,26 +776,6 @@
 				<key>Comment</key>
 				<string>External Icons Patch</string>
 				<key>InfoPlistPatch</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>g/sPDw==</data>
-				<key>Name</key>
-				<string>com.apple.iokit.IOUSBHostFamily</string>
-				<key>Replace</key>
-				<data>g/s/Dw==</data>
-				<key>Disabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>g/kPDw==</data>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/k/Dw==</data>
-				<key>Disabled</key>
 				<false/>
 			</dict>
 		</array>
